@@ -35,3 +35,4 @@ def print_items(dct: dict[str, str]) -> None:
 
 # mypy will generate error with type of NT.y
 reveal_type(NT(1, 2).y)
+reveal_locals()
