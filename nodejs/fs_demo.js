@@ -1,5 +1,5 @@
 const fs = require("fs");
-const fsAsync = require("fs").promises;
+const fsAsync = require("fs/promises");
 const path = require("path");
 
 // Create a folder
