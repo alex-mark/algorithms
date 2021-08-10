@@ -7,7 +7,7 @@ print(os.getcwd())
 os.makedirs("os-demo/sub-dir")  # creates nested folders
 
 # os.rmdir('os-test')
-os.removedirs("os-demo/sub-dir")  # creates nested folders
+os.removedirs("os-demo/sub-dir")  # removes nested folders
 
 # os.rename("test.txt", "demo.txt")
 mod_time = os.stat("sorting.ipynb").st_mtime
