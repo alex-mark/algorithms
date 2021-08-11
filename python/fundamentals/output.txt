@@ -1,0 +1,8 @@
+total 32
+drwxr-xr-x   7 alexmarkin  staff  224 Aug 11 20:21 .
+drwxr-xr-x  19 alexmarkin  staff  608 Aug 11 18:58 ..
+-rw-r--r--   1 alexmarkin  staff  355 Aug 10 14:46 closures.py
+-rw-r--r--   1 alexmarkin  staff  606 Aug 11 19:55 comprehensions.py
+-rw-r--r--   1 alexmarkin  staff    0 Aug 11 20:21 output.txt
+-rw-r--r--   1 alexmarkin  staff  411 Aug  5 18:28 scope.py
+-rw-r--r--   1 alexmarkin  staff  295 Aug 11 20:21 subprocess_demo.py
