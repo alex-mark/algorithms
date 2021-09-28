@@ -1,12 +1,13 @@
-from threading import Thread
+from threading import Thread, Lock
 import time
 
 global_value = 0
 
 
-def increase():
+def increase(lock):
     global global_value
 
+    lock.acquire()
     local_copy = global_value
 
     # processing
@@ -14,13 +15,15 @@ def increase():
     time.sleep(0.1)
 
     global_value = local_copy
+    lock.release()
 
 
 if __name__ == '__main__':
+    lock = Lock()
     print('start value', global_value)
 
-    thread1 = Thread(target=increase)
-    thread2 = Thread(target=increase)
+    thread1 = Thread(target=increase, args=(lock,))
+    thread2 = Thread(target=increase, args=(lock,))
 
     thread1.start()
     thread2.start()
