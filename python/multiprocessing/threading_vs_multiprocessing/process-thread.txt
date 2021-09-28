@@ -33,6 +33,6 @@ GIL: Global interpreter lock
 - Needed in CPython because of memory management is not thread-schafer
 
 - Avoid:
-    - Use multiprocessing
-    - Use a different, free-threaded Python implementation (Jython, Iron-Python)
-    - Use Python as wrapper for third-party library (C/C++) -> numpy, scipy
+  - Use multiprocessing
+  - Use a different, free-threaded Python implementation (Jython, Iron-Python)
+  - Use Python as wrapper for third-party library (C/C++) -> numpy, scipy
