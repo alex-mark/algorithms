@@ -7,15 +7,14 @@ global_value = 0
 def increase(lock):
     global global_value
 
-    lock.acquire()
-    local_copy = global_value
+    with lock:
+        local_copy = global_value
 
-    # processing
-    local_copy += 1
-    time.sleep(0.1)
+        # processing
+        local_copy += 1
+        time.sleep(0.1)
 
-    global_value = local_copy
-    lock.release()
+        global_value = local_copy
 
 
 if __name__ == '__main__':
